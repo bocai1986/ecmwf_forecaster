@@ -1,0 +1,12 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+numpy
+xarray
+cfgrib
+cartopy
+matplotlib
+requests
+# 你的依赖（ecmwf-opendata 等）
+ecmwf-opendata
+

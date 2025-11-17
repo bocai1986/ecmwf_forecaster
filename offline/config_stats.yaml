@@ -1,0 +1,38 @@
+algos:
+  precip_stats:
+    var_name: "tp"
+    acc_windows_h: [3, 6, 12, 24]
+    thresholds_mm: [10, 25, 50, 100]
+    regions:
+      - id: "beijing"
+        name: "北京市"
+        mask_var: "province_id"
+        mask_value: 1   # 根据上面打印出来的编码表填
+      - id: "tianjin"
+        name: "天津市"
+        mask_var: "province_id"
+        mask_value: 2
+      - id: "hebei"
+        name: "河北省"
+        mask_var: "province_id"
+        mask_value: 3
+      # ... 全部 34 个按编码表列完
+
+  wind_stats:
+    u_candidates: ["10u", "u10"]
+    v_candidates: ["10v", "v10"]
+    thresholds_ms: [10, 17.2, 24.5]
+    regions:
+      - id: "beijing"
+        name: "北京市"
+        mask_var: "province_id"
+        mask_value: 1
+      - id: "tianjin"
+        name: "天津市"
+        mask_var: "province_id"
+        mask_value: 2
+      - id: "hebei"
+        name: "河北省"
+        mask_var: "province_id"
+        mask_value: 3
+      # ...
