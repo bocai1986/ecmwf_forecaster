@@ -13,6 +13,7 @@ from .num_algos.base import build_algos, run_all
 
 # 这两行很重要：触发 @register_algo，把算法注册进 ALGO_REGISTRY
 from .num_algos import precip_stats  # noqa: F401
+from .num_algos import tracking_ai   # noqa: F401
 from .num_algos import wind_stats    # noqa: F401
 
 
